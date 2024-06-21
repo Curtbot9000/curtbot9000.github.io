@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 40px;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Darker background for the container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.intro h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #bb86fc; /* Purple for header */
+    margin: 0;
+}
+
+.intro p {
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #bb86fc; /* Purple */
+}
+
+.project-header h2 {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    color: inherit;
+}
+
+.project-header h2 img {
+    width: 32px; /* Larger icons */
+    height: 32px; /* Larger icons */
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.project-header .date {
+    font-size: 0.9em;
+    color: #e0e0e0; /* Light text for dates */
+}
+
+.project {
+    border-bottom: 1px solid #3e3e3e; /* Lighter dark grey */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #bb86fc; /* Purple */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7f39fb; /* Darker purple */
+}
+
+.image-previewer {
+    max-width: 100%;
+    max-height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide any overflow if images are larger */
+    margin-top: 10px; /* Optional: Add margin for spacing */
+}
+
+.image-previewer img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio and fit within dimensions */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .intro h1, .project-header h2 {
+        font-size: 24px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile img {
+        margin-bottom: 20px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-header .date {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+}

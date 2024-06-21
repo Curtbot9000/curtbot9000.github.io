@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis' Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="Images/CurtisWyatt.png" alt="Curtis Wyatt">
+            <div class="intro">
+                <h1>Curtis Wyatt | C# Programmer | Unity Game Developer</h1>
+                <p>Hello, I'm Curtis. I am a passionate self-taught game developer from Northern Ireland working primarily in Unity, with recent experience as a Game Designer for the online game <a href="https://www.townofsalem2.com/" target="_blank" rel="noopener noreferrer">Town of Salem 2</a>. I am highly self-motivated and a very fast learner, tackling high-level personal projects from as early as I was 16.</p>
+				<p>I am currently planning to pursue a degree in Computer Science or Software Engineering to further my knowledge and skills. As an avid gamer and modder, I enjoy creating immersive and enjoyable gaming experiences. I am excited about the future of my career in game development, and eager to make significant contributions to the industry.</p>
+            </div>
+        </div>
+
+		<div class="project">
+			<div class="project-header">
+				<h2><img src="Images/SalemModLoader.png" alt="Icon"> <a href="https://discord.gg/AdpRqzstfj" target="_blank" rel="noopener noreferrer">Salem Mod Loader</a></h2>
+				<span class="date">4th August 2023</span>
+			</div>
+			<p>I developed a comprehensive modloader and modmanager for the game Town of Salem 2, leveraging various technologies to ensure a seamless experience for both developers and users. Key features include:</p>
+			<ul>
+				<li><strong>Automatic Updates</strong>: Implemented through a simple API hosted on GitHub, this feature ensures that both the modloader and the mods it manages are always up-to-date.</li>
+				<li><strong>Built-in Mod Browser</strong>: Allows users to easily browse and install mods directly from within the game.</li>
+				<li><strong>Dynamic Settings System</strong>: Enables mod developers to add customizable settings to their mods. These settings can trigger code execution as values are updated, such as instantly swapping custom sky themes in the game.</li>
+				<li><strong>Automatic Mod Disabling</strong>: Identifies and disables outdated mods that may break due to game updates, ensuring stability.</li>
+				<li><strong>Malicious Mod Detection</strong>: The modloader includes a security feature that allows me to externally mark malicious mods, uninstalling them for users before they can be loaded into the game. This ensures a safe environment for all users.</li>
+			</ul>
+			<p>All UI elements for the modloader were designed in Unity and integrated into the game via asset bundles.</p>
+			<div class="image-previewer">
+				<img id="SalemModLoader" src="Images/SalemModLoaderPreviews/1.png" alt="Preview Image">
+			</div>
+			<p><strong>Technologies Used</strong>:</p>
+			<ul>
+				<li>C#</li>
+				<li>Unity</li>
+				<li>HarmonyLib</li>
+				<li>Bepinex</li>
+				<li>GitHub</li>
+			</ul>
+		</div>
+
+        <div class="project">
+            <div class="project-header">
+                <h2><img src="Images/BetterTOS2.png" alt="Icon"> <a href="https://discord.gg/6s7KxgDqbd" target="_blank" rel="noopener noreferrer">BetterTOS2</a></h2>
+                <span class="date">26th January 2024</span>
+            </div>
+			<p>BetterTOS2 is a mod for the game Town of Salem 2 that I developed alongside <a href="https://www.youtube.com/@TubaAntics" target="_blank" rel="noopener noreferrer">TubaAntics</a>. It introduces numerous new roles, a full new gamemode selecting system, rebalances the game and more. The mod has received over 2.5 million views on youtube with that number growing every week. The quality of the mod was so high that the developers for Town of Salem 2 brought me onto the team to work on the actual game.</p>
+			<p>In order to create the mod, we had to program our own server for users to connect to including having to recode all of the original game's netcode. Our server was able to support over 300 concurrent users on a VPS with only 1 CPU core, and 4gb of Memory.</p>
+			<p>I developed a Discord Bot for the mod that would allow users to connect their BetterTOS2 accounts with their Discord acounts. This allowed users to track their ingame stats through the bot, and allowed users to talk in the mod's in-game chat through a discord channel. Ontop of this it provided us with a very handy interface for remotely moderating.</p>
+			<div class="image-previewer">
+				<img id="BetterTOS2" src="Images/BetterTOS2Previews/1.png" alt="Preview Image">
+			</div>
+			<p><strong>Technologies Used</strong>:</p>
+			<ul>
+				<li>C#</li>
+				<li>Unity</li>
+				<li>Salem Mod Loader</li>
+				<li>GitHub</li>
+				<li>Google Firebase</li>
+				<li><a href="https://www.hostinger.co.uk/" target="_blank" rel="noopener noreferrer">Hostinger</a></li>
+				<li>Discord.Net</li>
+			</ul>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <h2><img src="Images/BlankMediaGames.png" alt="Icon"> <a href="https://www.blankmediagames.com/" target="_blank" rel="noopener noreferrer"> BlankMediaGames</a></h2>
+                <span class="date">April 1st 2024</span>
+            </div>
+            <p>I contributed to the development of <a href="https://www.townofsalem2.com/" target="_blank" rel="noopener noreferrer">Town of Salem 2</a>, focusing on enhancing gameplay and introducing quality-of-life features. A significant achievement was co-designing and implementing the acclaimed <a href="https://www.youtube.com/watch?v=A9updxYs3dc&pp=ygUfdG93biBvZiBzYWxlbSAyIHJhbmtlZCBzZWFzb24gMw%3D%3D" target="_blank" rel="noopener noreferrer">Season 3 update</a>, which improved game balance and added innovative features that resonated positively with players. I was also responsible for creating a youtube video explaining the update's newest features, and why we were making certain changes.</p>
+			<p>I worked both on the game's client features in the Unity Editor, and also on the game's server-code.</p>
+			<p><strong>Technologies Used</strong>:</p>
+			<ul>
+				<li>C#</li>
+				<li>Unity</li>
+				<li>Slack</li>
+				<li>Discord</li>
+				<li>TortoiseSVN</li>
+				<li>DaVinci Resolve</li>
+			</ul>
+        </div>
+    </div>
+	
+	<script>
+		const imageUrls = {
+			'SalemModLoader': [
+				'Images/SalemModLoaderPreviews/1.png',
+				'Images/SalemModLoaderPreviews/2.png',
+				'Images/SalemModLoaderPreviews/3.png',
+				'Images/SalemModLoaderPreviews/4.png'
+			],
+			'BetterTOS2': [
+				'Images/BetterTOS2Previews/1.png',
+				'Images/BetterTOS2Previews/2.png',
+				'Images/BetterTOS2Previews/3.png',
+				'Images/BetterTOS2Previews/4.png',
+				'Images/BetterTOS2Previews/5.png'
+			],
+			'BlankMediaGames': [
+				'Images/BlankMediaGamesPreviews/1.png',
+				'Images/BlankMediaGamesPreviews/2.png',
+				'Images/BlankMediaGamesPreviews/3.png',
+				'Images/BlankMediaGamesPreviews/4.png'
+			],
+		};
+
+		let currentIndex = {
+			'SalemModLoader': 0,
+			'BetterTOS2': 0,
+			'BlankMediaGames': 0,
+		};
+
+		function changePreviewImage(projectId, previewImageElement) {
+			previewImageElement.src = imageUrls[projectId][currentIndex[projectId]];
+			currentIndex[projectId] = (currentIndex[projectId] + 1) % imageUrls[projectId].length;
+		}
+
+		const salemModLoaderImage = document.getElementById('SalemModLoader');
+		setInterval(() => changePreviewImage('SalemModLoader', salemModLoaderImage), 3000);
+
+		const betterTOS2Image = document.getElementById('BetterTOS2');
+		setInterval(() => changePreviewImage('BetterTOS2', betterTOS2Image), 3000);		
+		
+		const blankMediaGamesImage = document.getElementById('BlankMediaGames');
+		setInterval(() => changePreviewImage('BlankMediaGames', blankMediaGamesImage), 3000);
+	</script>
+
+</body>
+</html>
