@@ -20,6 +20,13 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+	border-top: 1px solid #3e3e3e; /* Lighter dark grey */
+    padding-top: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #3e3e3e; /* Lighter dark grey */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile img {
@@ -30,6 +37,11 @@ body {
     max-height: 100%;
     margin-right: 20px;
     object-fit: cover;
+}
+
+.profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 .intro h1 {
@@ -75,6 +87,9 @@ body {
 }
 
 .project {
+	border-top: 1px solid #3e3e3e; /* Lighter dark grey */
+    padding-top: 20px;
+    margin-top: 20px;
     border-bottom: 1px solid #3e3e3e; /* Lighter dark grey */
     padding-bottom: 20px;
     margin-bottom: 20px;
